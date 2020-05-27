@@ -1,17 +1,17 @@
 <template>
   <div id="app">
-    <ToDoPage />
+    <div class="nav">
+      <router-link to="/">To-Do</router-link>
+      <router-link to="/archive">Archive Task</router-link>
+    </div>
+    <router-view />
   </div>
 </template>
 
 <script>
-import ToDoPage from './pages/ToDoPage.vue'
-
 export default {
   name: 'App',
-  components: {
-    ToDoPage
-  }
+  
 }
 </script>
 
